@@ -8,8 +8,8 @@ class BotHandler:
         self.token = "651130819:AAHg2IGYRU48cbY-uqBLgFI8hwNy63Co-s8"
         self.api_url = "https://api.telegram.org/bot{}/".format(token)  # в url для api підставляємо значення token використовуючи .format
 
-    def get_updates(self, timeout=30, offset=None):  # функція
-        method = "getUpdates"  # задаємо назву методу
+    def get_updates(self, timeout=30, offset=None):  # функція 
+        method = "getUpdates"  # задаємо назву методу 
         params = {"timeout": timeout,
                   "offset": offset}  # timeout та offset встановлюються за значеннями вказаними в функції
         response = requests.get(self.api_url + method, params)  # за допомогою requests відправляємо get запит
