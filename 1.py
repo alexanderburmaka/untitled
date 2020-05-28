@@ -19,7 +19,7 @@ class BotHandler:
     def send_message(self, text, chat_id):
         method = "sendMessege"  # задаємо назву методу
         params = {"chat_id": chat_id, "text": text}  # присвоюємо для params значення chat_id та text 
-        response = requests.post(self.api_url + method, params)  # за допомогою requests відправляємо post запит 
+        response = requests.post(self.api_url + method, params)  # за допомогою requests відправляємо post запит  
         return response  # відправляємо повідомлення 
 
     def get_last_update(self):
