@@ -13,7 +13,7 @@ class BotHandler:
         params = {"timeout": timeout,
                   "offset": offset}  # timeout та offset встановлюються за значеннями вказаними в функції
         response = requests.get(self.api_url + method, params)  # за допомогою requests відправляємо get запит
-        result_json = response.json()["result"]  # зберігаємо значення result в json
+        result_json = response.json()["result"]  # зберігаємо значення result в json 
         return result_json
 
     def send_message(self, text, chat_id):
